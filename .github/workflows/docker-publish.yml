@@ -38,8 +38,8 @@ jobs:
           ref: ${{ env.UPSTREAM_BRANCH }}
           path: .
 
-      - name: Clone git
-        run: git clone https://github.com/louislefo/Finly.git .
+      - name: Inspect folder
+        run: ls -al
 
       # Install the cosign tool except on PR
       # https://github.com/sigstore/cosign-installer
